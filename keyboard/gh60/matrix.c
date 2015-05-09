@@ -144,8 +144,8 @@ static void  init_cols(void)
     // Input with pull-up(DDR:0, PORT:1)
     DDRF  &= ~(1<<0 | 1<<1 | 1<<4 | 1<<5 | 1<<6 | 1<<7);
     PORTF |=  (1<<0 | 1<<1 | 1<<4 | 1<<5 | 1<<6 | 1<<7);
-    DDRB  &= ~(1<<6 | 1<< 5);
-    PORTB |=  (1<<6 | 1<< 5);
+    DDRB  &= ~(1<<6 | 1<<5);
+    PORTB |=  (1<<6 | 1<<5);
 }
 
 static matrix_row_t read_cols(void)
